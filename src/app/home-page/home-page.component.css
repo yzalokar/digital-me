@@ -1,0 +1,32 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+
+  .heading {
+    font-size: 4rem;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+    z-index: 1;
+    position: relative;
+  }
+
+  .buttons-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+  }
+}
