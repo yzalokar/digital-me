@@ -6,86 +6,71 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 0rem;
+}
 
-  .headings-container {
-    text-align: center;
-    z-index: 1;
+.home-page .main-image {
+  max-width: 35vw;
+  width: 100%;
+  height: auto;
+}
 
-    .heading {
-      font-family: 'BabasNeue', sans-serif;
-      font-size: 4rem;
-      margin: 0.5rem 0;
-      line-height: 1.2;
+.home-page .heading {
+  position: absolute;
+  font-size: 6rem;
+  text-align: center;
+}
 
-      &.subheading {
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-  }
+.corner-link {
+  position: absolute;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #000;
+  z-index: 2;
+  transition: color 0.2s;
+}
 
-  .corner-link {
-    position: absolute;
-    font-family: 'BabasNeue', sans-serif;
-    font-size: 2rem;
-    text-decoration: underline;
-    color: #000;
-    z-index: 2;
-    transition: color 0.2s;
+.corner-link:hover {
+  color: #0077b5;
+}
 
-    &:hover {
-      color: #0077b5;
-    }
+.corner-link.top-left {
+  top: 1rem;
+  left: 1rem;
+}
 
-    &.top-left {
-      top: 1rem;
-      left: 1rem;
-    }
+.corner-link.top-right {
+  top: 1rem;
+  right: 1rem;
+}
 
-    &.top-right {
-      top: 1rem;
-      right: 1rem;
-
-      &:hover {
-        color: #e1306c;
-      }
-    }
-  }
+.corner-link.top-right:hover {
+  color: #e1306c;
 }
 
 @media (max-width: 768px) {
-  .home-page {
-    .headings-container {
-      .heading {
-        font-size: 2rem;
+  .home-page .heading {
+    font-size: 3rem;
+  }
 
-        &.subheading {
-          font-size: 1rem;
-        }
-      }
-    }
+  .home-page .main-image {
+    max-width: 50vw;
+  }
 
-    .corner-link {
-      font-size: 0.9rem;
-    }
+  .corner-link {
+    font-size: 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .home-page {
-    .headings-container {
-      .heading {
-        font-size: 1.5rem;
+  .home-page .heading {
+    font-size: 2rem;
+  }
 
-        &.subheading {
-          font-size: 0.9rem;
-        }
-      }
-    }
+  .home-page .main-image {
+    max-width: 70vw;
+  }
 
-    .corner-link {
-      font-size: 0.8rem;
-    }
+  .corner-link {
+    font-size: 0.9rem;
   }
 }
