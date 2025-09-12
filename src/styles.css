@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+@font-face {
+  font-family: 'BabasNeue';
+  src: url('/src/assets/fonts/BabasNeue-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'BabasNeue', sans-serif;
+}
