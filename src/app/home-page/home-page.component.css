@@ -96,11 +96,11 @@
 
 @media (max-width: 768px) {
   .home-page .heading {
-    font-size: 3rem;
+    font-size: 6rem;
   }
 
   .home-page .main-image {
-    max-width: 50vw;
+    max-width: 65vw;
   }
   
   .banner {
@@ -114,10 +114,10 @@
 
 @media (max-width: 480px) {
   .home-page .heading {
-    font-size: 2rem;
+    font-size: 5rem;
   }
   .home-page .main-image {
-    max-width: 70vw;
+    max-width: 65vw;
   }
 
   .banner {
