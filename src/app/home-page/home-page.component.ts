@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
@@ -9,6 +10,26 @@ import { Component } from '@angular/core';
 
 })
 
-export class HomePageComponent {
-  
+export class HomePageComponent implements OnInit, OnDestroy {
+  currentTime: string = '';
+  private clockIntervalId?: number;
+
+  ngOnInit(): void {
+    this.updateCurrentTime();
+    this.clockIntervalId = window.setInterval(() => this.updateCurrentTime(), 1000);
+  }
+
+  ngOnDestroy(): void {
+    if (this.clockIntervalId !== undefined) {
+      window.clearInterval(this.clockIntervalId);
+    }
+  }
+
+  private updateCurrentTime(): void {
+    this.currentTime = new Date().toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+  }
 }
