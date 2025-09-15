@@ -21,6 +21,11 @@
   font-size: 2rem;
   letter-spacing: 0.02em;
   color: #000000;
+  text-decoration: none;
+}
+
+.nav-item.active {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -29,6 +34,16 @@
     padding: 0 1rem;
   }
   .nav-item {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-inner {
+    height: 52px;
+    padding: 0 0.75rem;
+  }
+  .nav-item {
+    font-size: 1.2rem;
   }
 }
