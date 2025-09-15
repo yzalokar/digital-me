@@ -9,8 +9,9 @@
 }
 
 .home-page .main-image {
-  max-width: 35vw;
+  max-width: 40vw;
   height: auto;
+  border: 2px solid #000000;
 }
 
 .home-page .heading {
@@ -20,38 +21,30 @@
   text-align: center;
 }
 
-.corner-link {
+.action-button {
   position: absolute;
-  font-size: 2rem;
-  text-decoration: underline;
-  color: #000;
+  top: 30vh;
+  transform: translateY(-50%);
+  padding: 0.9rem 1.8rem;
+  font-size: 1.9rem;
+  background: #fff;
+  color: #000000;
+  border: 2px solid #000000;
+  cursor: pointer;
   z-index: 2;
-  transition: color 0.2s;
+  width: 15vw;
 }
 
-.corner-link:hover {
-  color: #0077b5;
-}
+.action-button.left { left: 8vw; }
+.action-button.right { right: 8vw; }
 
-.corner-link.top-left {
-  top: 1rem;
-  left: 1rem;
-}
-
-.corner-link.top-right {
-  top: 1rem;
-  right: 1rem;
-}
-
-.corner-link.top-right:hover {
-  color: #e1306c;
-}
+.action-button:hover { background: #000; color: #fff; }
 
 .clock {
   position: absolute;
   top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 1rem;
+  transform: none;
   z-index: 2;
   font-size: 1.25rem;
   background: rgba(255, 255, 255, 0.85);
@@ -68,6 +61,18 @@
   height: 64px;
   background: #fff;
   border-top: 2px solid #000000;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.banner-top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 64px;
+  background: #fff;
+  border-bottom: 2px solid #000000;
   overflow: hidden;
   z-index: 3;
 }
@@ -117,6 +122,9 @@
   .banner {
     height: 52px;
   }
+  .banner-top {
+    height: 52px;
+  }
   .banner-segment {
     font-size: 1rem;
   }
@@ -135,6 +143,9 @@
     font-size: 0.9rem;
   }
   .banner {
+    height: 48px;
+  }
+  .banner-top {
     height: 48px;
   }
   .banner-segment {

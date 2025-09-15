@@ -32,4 +32,12 @@ export class HomePageComponent implements OnInit, OnDestroy {
       second: '2-digit'
     });
   }
+
+  openLinkedIn(): void {
+    window.open('https://www.linkedin.com/in/yannick-zalokar-71063a1b5/', '_blank');
+  }
+
+  openInstagram(): void {
+    window.open('https://www.instagram.com/yourparentsloveyannick/', '_blank');
+  }
 }
