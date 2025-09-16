@@ -1,11 +1,12 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-
 # Compiled output
 /dist
-/frontend/dist
 /tmp
 /out-tsc
 /bazel-out
+
+#angular
+/frontend/.angular/
+/frontend/dist
 
 # Node
 /node_modules
