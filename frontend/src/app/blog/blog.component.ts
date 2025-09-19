@@ -1,18 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-gallery',
+  selector: 'app-blog',
   standalone: true,
   imports: [],
   template: `
-    <section class="gallery">
-      <h1>GALLERY</h1>
+    <div class="blog">
+      <h1>BLOG</h1>
       <p>Coming soon.</p>
-    </section>
+    </div>
   `,
   styles: [`
-    .gallery { padding: 2rem; }
+    .blog { padding: 2rem; }
     h1 { margin: 0 0 1rem; }
   `]
 })
-export class GalleryComponent {}
+export class BlogComponent {}
