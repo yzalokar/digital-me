@@ -1,0 +1,18 @@
+<a routerLink="/" class="back-link">&lt; back</a>
+
+<div class="gallery-container">
+  <div class="image-names">
+    <div 
+      *ngFor="let image of images" 
+      class="image-name"
+      (mouseenter)="hoveredImage = image.src"
+      (mouseleave)="hoveredImage = null"
+      (click)="hoveredImage = image.src">
+      {{ image.name }}
+    </div>
+  </div>
+  
+  <div class="image-preview" *ngIf="hoveredImage">
+    <img [src]="hoveredImage" [alt]="hoveredImage" />
+  </div>
+</div>

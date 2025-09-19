@@ -1,0 +1,14 @@
+.back-link {
+    display: block;
+    padding: 6rem 3rem 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+p {
+    padding: 2rem 3rem 5rem;
+}

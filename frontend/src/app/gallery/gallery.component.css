@@ -1,0 +1,57 @@
+.back-link {
+    display: block;
+    padding: 6rem 3rem 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.gallery-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem 3rem 5rem;
+}
+
+.image-names {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-name {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: 100;
+    color: #000000;
+    cursor: pointer;
+}
+
+.image-name:hover {
+    font-style: italic;
+}
+
+.image-preview {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.image-preview img {
+    max-width: 40vw;
+    max-height: 35vw;
+}
+
+@media (max-width: 768px) {
+    .image-name {
+        font-size: 2rem;
+    }
+    
+    .image-preview img {
+        width: 80vw;
+    }
+}
